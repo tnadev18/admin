@@ -1,0 +1,21 @@
+*.DS_Store
+.idea
+/nbproject/private/
+/nbproject/
+/node_modules/
+TODO
+*.zip
+test.html
+*.log
+.php-cs-fixer.cache
+
+# Intellij IDEA Project Files
+*.iml
+*.ipr
+*.iws
+
+# vim
+*.swp
+
+# Composer
+/vendor/
