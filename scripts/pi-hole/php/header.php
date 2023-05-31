@@ -20,7 +20,7 @@ $hostname = gethostname() ? gethostname() : '';
     <meta http-equiv="cache-control" content="max-age=60,private">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Pi-hole<?php echo $hostname ? ' - '.$hostname : ''; ?></title>
+    <title>Newton's Apple<?php echo $hostname ? " - ".$hostname : ""; ?></title>
 
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
