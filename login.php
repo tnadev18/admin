@@ -26,7 +26,7 @@ require 'scripts/pi-hole/php/header.php';
             <div class="text-center">
                 <img src="img/logo.svg" alt="Pi-hole logo" class="loginpage-logo">
             </div>
-            <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;">Pi-<b>hole</b></span></div>
+            <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;">Newton's<b>Apple</b></span></div>
         </div>
         <!-- /.login-logo -->
 
@@ -90,11 +90,11 @@ require 'scripts/pi-hole/php/header.php';
     </section>
 </div>
 
-<div class="login-donate">
+<!-- <div class="login-donate">
     <div class="text-center" style="font-size:125%">
         <strong><a href="https://pi-hole.net/donate/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> Donate</a></strong> if you found this useful.
     </div>
 </div>
-<script src="<?php echo fileversion('scripts/pi-hole/js/footer.js'); ?>"></script>
+<script src="<\\?php echo fileversion('scripts/pi-hole/js/footer.js'); ?>"></script> -->
 </body>
 </html>

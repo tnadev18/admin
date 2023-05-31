@@ -212,7 +212,7 @@
                         <!-- Pi-hole diagnosis -->
                         <li class="<?php if ($scriptname === 'messages.php') { ?> active<?php } ?>">
                             <a href="messages.php">
-                                <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> Pi-hole diagnosis
+                                <i class="fa fa-fw menu-icon fa-file-medical-alt"></i>diagnosis
                                 <span class="pull-right-container warning-count hidden"></span>
                             </a>
                         </li>
@@ -238,7 +238,7 @@
                         <li class="<?php if ($scriptname === 'taillog.php') { ?> active<?php } ?>">
                             <a href="taillog.php">
                                 <svg class="svg-inline--fa fa-fw menu-icon" style="height: 1.25em"><use xlink:href="img/pihole_icon.svg#pihole-svg-logo"/></svg>
-                                Tail pihole.log
+                                Tail system.log
                             </a>
                         </li>
                         <!-- Tail FTL.log -->
@@ -270,12 +270,12 @@
                 </li>
 
                 <!-- Donate button -->
-                <li class="header text-uppercase">Donate</li>
+                <!-- <li class="header text-uppercase">Donate</li>
                 <li class="menu-donate">
                     <a href="https://pi-hole.net/donate/" target="_blank">
                         <i class="fas fa-fw menu-icon fa-donate"></i> <span>Donate</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </section>
         <!-- /.sidebar -->
