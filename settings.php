@@ -475,7 +475,7 @@ if ($FTLpid !== 0) {
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div><input type="checkbox" name="active" id="DHCPchk" <?php if ($DHCP) { ?>checked<?php } ?>><label for="DHCPchk"><strong>DHCP server enabled</strong></label></div><br>
-                                                <p id="dhcpnotice" lookatme-text="Make sure your router's DHCP server is disabled when using the Pi-hole DHCP server!" <?php if (!$DHCP) { ?>hidden<?php } ?>>Make sure your router's DHCP server is disabled when using the Pi-hole DHCP server!</p>
+                                                <p id="dhcpnotice" lookatme-text="Make sure your router's DHCP server is disabled when using the Pi-hole DHCP server!" <?php if (!$DHCP) { ?>hidden<?php } ?>>Make sure your router's DHCP server is disabled when using the Newton's Apple DHCP server!</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -531,7 +531,7 @@ if ($FTLpid !== 0) {
                                     <div class="box-body">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label>Pi-hole domain name</label>
+                                                <label>Newton's Apple domain name</label>
                                                 <div class="form-group">
                                                     <div class="input-group">
                                                         <div class="input-group-addon">Domain</div>
@@ -883,7 +883,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                         </div>
                                                     </div>
                                                     <div class="danger-area">
-                                                        <h4>Potentially dangerous options</h4>Make sure your Pi-hole is properly firewalled!
+                                                        <h4>Potentially dangerous options</h4>Make sure your Newton's Apple is properly firewalled!
                                                         <div>
                                                             <input type="radio" name="DNSinterface" id="DNSinterface2" value="single"
                                                                 <?php if ($DNSinterface == 'single') { ?>checked<?php } ?>>
@@ -901,7 +901,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                         </div>
                                                         <p>These options are dangerous on devices
                                                             directly connected to the Internet such as cloud instances and are only safe if your
-                                                            Pi-hole is properly firewalled. In a typical at-home setup where your Pi-hole is
+                                                            Newton's Apple is properly firewalled. In a typical at-home setup where your Newton's Apple is
                                                             located within your local network (and you have <strong>not</strong> forwarded port 53
                                                             in your router!) they are safe to use.</p>
                                                     </div>
@@ -925,7 +925,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                 <div>
                                                     <input type="checkbox" name="DNSrequiresFQDN" id="DNSrequiresFQDN" title="domain-needed" <?php if ($DNSrequiresFQDN) { ?>checked<?php } ?>>
                                                     <label for="DNSrequiresFQDN"><strong>Never forward non-FQDN <code>A</code> and <code>AAAA</code> queries</strong></label>
-                                                    <p>When there is a Pi-hole domain set and this box is
+                                                    <p>When there is a Newton's Apple domain set and this box is
                                                         ticked, this asks FTL that this domain is purely
                                                         local and FTL may answer queries from <code>/etc/hosts</code> or DHCP leases
                                                         but should never forward queries on that domain to any upstream servers.
@@ -941,14 +941,14 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                         of prefixes affected is the list given in <a href="https://tools.ietf.org/html/rfc6303">RFC6303</a>.</p>
                                                         <p><strong>Important</strong>: Enabling these two options may increase your privacy,
                                                         but may also prevent you from being able to access
-                                                        local hostnames if the Pi-hole is not used as DHCP server.</p>
+                                                        local hostnames if the Newton's Apple is not used as DHCP server.</p>
                                                 </div>
                                                 <br>
                                                 <div>
                                                     <input type="checkbox" name="DNSSEC" id="DNSSEC" <?php if ($DNSSEC) { ?>checked<?php } ?>>
                                                     <label for="DNSSEC"><strong>Use DNSSEC</strong></label>
                                                     <p>Validate DNS replies and cache DNSSEC data. When forwarding DNS
-                                                        queries, Pi-hole requests the DNSSEC records needed to validate
+                                                        queries, Newton's Apple requests the DNSSEC records needed to validate
                                                         the replies. If a domain fails validation or the upstream does not
                                                         support DNSSEC, this setting can cause issues resolving domains.
                                                         Use an upstream DNS server which supports DNSSEC when activating DNSSEC. Note that
@@ -963,7 +963,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                     <p>When a client makes too many queries in too short time, it
                                                     gets rate-limited. Rate-limited queries are answered with a
                                                     <code>REFUSED</code> reply and not further processed by FTL
-                                                    and prevent Pi-holes getting overwhelmed by rogue clients.
+                                                    and prevent Newton's Apples getting overwhelmed by rogue clients.
                                                     It is important to note that rate-limiting is happening on a
                                                     per-client basis. Other clients can continue to use FTL while
                                                     rate-limited clients are short-circuited at the same time.</p>
@@ -973,10 +973,10 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                     for further details.</p>
                                                 <br>
                                                 <h4>Conditional forwarding</h4>
-                                                <p>If not configured as your DHCP server, Pi-hole typically won't be able to
+                                                <p>If not configured as your DHCP server, Newton's Apple typically won't be able to
                                                     determine the names of devices on your local network.  As a
                                                     result, tables such as Top Clients will only show IP addresses.</p>
-                                                <p>One solution for this is to configure Pi-hole to forward these
+                                                <p>One solution for this is to configure Newton's Apple to forward these
                                                     requests to your DHCP server (most likely your router), but only for devices on your
                                                     home network.  To configure this we will need to know the IP
                                                     address of your DHCP server and which addresses belong to your local network.
@@ -1325,7 +1325,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                 </div>
                                                 <p>The privacy level may be increased at any time without having to restart the DNS resolver. However, note that the DNS resolver needs to be restarted when lowering the privacy level. This restarting is automatically done when saving.</p>
                                                 <?php if ($privacylevel > 0 && $piHoleLogging) { ?>
-                                                <p class="lookatme" lookatme-text="Warning: Pi-hole's query logging is activated. Although the dashboard will hide the requested details, all queries are still fully logged to the pihole.log file.">Warning: Pi-hole's query logging is activated. Although the dashboard will hide the requested details, all queries are still fully logged to the pihole.log file.</p>
+                                                <p class="lookatme" lookatme-text="Warning: Pi-hole's query logging is activated. Although the dashboard will hide the requested details, all queries are still fully logged to the pihole.log file.">Warning: Newton's Apple's query logging is activated. Although the dashboard will hide the requested details, all queries are still fully logged to the pihole.log file.</p>
                                                 <?php } ?>
                                             </div>
                                         </div>
@@ -1356,7 +1356,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                     <div class="box-body">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <p>Backup your Pi-hole configuration (settings &amp; lists) as a downloadable archive</p>
+                                                <p>Backup your Newton's Apple configuration (settings &amp; lists) as a downloadable archive</p>
                                                 <button type="submit" class="btn btn-default">Backup</button>
                                             </div>
                                         </div>
@@ -1436,7 +1436,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                                     <input type="text" id="zip_filename" class="form-control"
                                                         placeholder="no file selected" readonly="readonly" tabindex="-1">
                                                 </div>
-                                                <p class="help-block">Upload only Pi-hole backup files.</p>
+                                                <p class="help-block">Upload only Newton's Apple backup files.</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -1490,7 +1490,7 @@ if (isset($piholeFTLConf['RATE_LIMIT'])) {
                                     <h3 class="box-title">Teleporter</h3>
                                 </div>
                                 <div class="box-body">
-                                    <p>The PHP extension <code>Phar</code> is not loaded. Please ensure it is installed and loaded if you want to use the Pi-hole teleporter.</p>
+                                    <p>The PHP extension <code>Phar</code> is not loaded. Please ensure it is installed and loaded if you want to use the Newton's Apple teleporter.</p>
                                 </div>
                             </div>
                         </div>

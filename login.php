@@ -26,7 +26,7 @@ require 'scripts/pi-hole/php/header.php';
             <div class="text-center">
                 <img src="img/logo.svg" alt="Pi-hole logo" class="loginpage-logo">
             </div>
-            <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;">Newton's<b>Apple</b></span></div>
+            <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;">Newton's Apple</span></div>
         </div>
         <!-- /.login-logo -->
 
@@ -69,7 +69,7 @@ require 'scripts/pi-hole/php/header.php';
                                 </div>
                             </div>
                             <div class="box-body">
-                                <p>After installing Pi-hole for the first time, a password is generated and displayed
+                                <p>After installing Newton's Apple for the first time, a password is generated and displayed
                                     to the user. The password cannot be retrieved later on, but it is possible to set
                                     a new password (or explicitly disable the password by setting an empty password)
                                     using the command
@@ -84,7 +84,7 @@ require 'scripts/pi-hole/php/header.php';
             <div class="login-footer" style="margin-top: 15px; display: flex; justify-content: space-between;">
                 <a class="btn btn-default btn-sm" role="button" href="https://docs.pi-hole.net/" target="_blank"><i class="fas fa-question-circle"></i> Documentation</a>
                 <a class="btn btn-default btn-sm" role="button" href="https://github.com/pi-hole/" target="_blank"><i class="fab fa-github"></i> Github</a>
-                <a class="btn btn-default btn-sm" role="button" href="https://discourse.pi-hole.net/" target="_blank"><i class="fab fa-discourse"></i> Pi-hole Discourse</a>
+                <a class="btn btn-default btn-sm" role="button" href="https://discourse.pi-hole.net/" target="_blank"><i class="fab fa-discourse"></i> Newton's Apple Discourse</a>
             </div>
         </div>
     </section>

@@ -13,7 +13,7 @@ require 'scripts/pi-hole/php/header_authenticated.php';
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Specify date range to be queried from the Pi-hole query database</h1>
+    <h1>Specify date range to be queried from the Newton's Apple query database</h1>
 </div>
 
 <div class="row">
@@ -75,7 +75,7 @@ require 'scripts/pi-hole/php/header_authenticated.php';
 </div>
 
 <div id="timeoutWarning" class="alert alert-warning alert-dismissible fade in" role="alert" hidden>
-    Depending on how large of a range you specified, the request may time out while Pi-hole tries to retrieve all the data.<br/><span id="err"></span>
+    Depending on how large of a range you specified, the request may time out while Newton's Apple tries to retrieve all the data.<br/><span id="err"></span>
 </div>
 
 <!-- Small boxes (Stat box) -->
